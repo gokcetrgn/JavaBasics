@@ -48,5 +48,7 @@ public class Average {
         double average = toplam / 6;
 
         System.out.println("Ortalamaniz: " + average);
+    
+        scanner.close();
     }
 }

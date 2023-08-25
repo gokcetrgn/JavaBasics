@@ -4,12 +4,9 @@ import java.util.Scanner;
 
 public class User {
     public static void main(String[] args) {
-        String userName,password;
+        String password;
 
         Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Enter your username:");
-        userName = scanner.nextLine();
 
         System.out.println("Enter your password");
         password = scanner.nextLine();
