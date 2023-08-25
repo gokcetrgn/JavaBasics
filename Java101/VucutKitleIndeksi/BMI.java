@@ -16,6 +16,7 @@ public class BMI {
 
         System.out.println("Vucut kitle indeksiniz: " + bmi);
 
+        scanner.close();
 
     }
 }
