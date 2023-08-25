@@ -51,5 +51,6 @@ public class ChineseZodiacCal {
             default:
             break;
         }
+        scanner.close();
     }
 }
