@@ -19,5 +19,7 @@ public class AreaOfACircle {
         double alan =  ((pi * (r*r) * aci) / 360);
 
         System.out.println(alan);
+    
+        scanner.close();
     }
 }
