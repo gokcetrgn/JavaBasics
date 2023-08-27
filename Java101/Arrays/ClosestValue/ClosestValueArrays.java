@@ -29,6 +29,7 @@ public class ClosestValueArrays {
         System.out.println("The closest min number is "+ theClosestMin );
         System.out.println("The closest max number is " + theClosestMax);
 
+        scanner.close();
 
     }   
 }
