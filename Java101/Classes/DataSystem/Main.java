@@ -6,6 +6,7 @@ public class Main {
 
         Course course = new Course("Edebiyat", "101", "ELT", teacher);
 
+
         course.addTeacher(teacher);
 
         teacher.print();

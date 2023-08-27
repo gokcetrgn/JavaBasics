@@ -1,8 +1,8 @@
 package Classes.DataSystem;
 
 public class Course {
-        
-    Teacher courseTeacher;
+
+    Teacher teacher;
     String name;
     String code;
     String prefix;
@@ -12,17 +12,20 @@ public class Course {
         this.name = name;
         this.code = code;
         this.prefix = prefix;
-        this.courseTeacher = teacher;
-        this.
-        note = 0;
+        this.teacher = teacher;
+        this.note = 0;
     }
     void addTeacher(Teacher teacher){
 
-        this.courseTeacher = teacher;
+        if(teacher.branch.equals(this.prefix)){
+            this.teacher = teacher;
+        }else{
+            System.out.println("Atama yapilamaz.");
+        }
     }
 
     void printTeachInfo(){
-        this.courseTeacher.print();
+        this.teacher.print();
     }
 
 }
