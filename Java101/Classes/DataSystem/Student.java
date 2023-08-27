@@ -37,14 +37,30 @@ public class Student {
         if (courseThree >= 0 && courseThree <= 100) {
             this.courseThree.note = courseThree;
         }
+        
     }
     public void calcAvarage() {
-        this.avarage = (this.courseOne.note + this.courseTwo.note + this.courseThree.note) / 3;
+        this.avarage = (this.courseOne.average() + this.courseTwo.average() + this.courseThree.average()) / 3;
     }
 
     public boolean isCheckPass() {
         calcAvarage();
         return this.avarage > 55;
+    }
+
+    public void isPass() {
+        if (this.courseOne.note == 0 || this.courseTwo.note == 0 || this.courseThree.note == 0) {
+            System.out.println("Notlar tam olarak girilmemiş");
+        } else {
+            this.isPass = isCheckPass();
+            printNote();
+            System.out.println("Ortalama : " + this.avarage);
+            if (this.isPass) {
+                System.out.println("Sinifi Geçti. ");
+            } else {
+                System.out.println("Sinifta Kaldi.");
+            }
+        }
     }
     public void printNote(){
         System.out.println("=========================");
