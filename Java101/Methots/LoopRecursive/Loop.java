@@ -25,7 +25,7 @@ public class Loop {
     public static void main(String[] args) {
         int b,a;
         Scanner input = new Scanner(System.in);
-        System.out.print("Bir Sayı Giriniz: ");
+        System.out.print("Bir Sayi Giriniz: ");
         b = input.nextInt();
         a = b ;
         sayi(a,b);
