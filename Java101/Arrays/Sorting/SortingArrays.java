@@ -22,6 +22,6 @@ public class SortingArrays {
         for(int value:array){
             System.out.print(value + " ");
         }
-        
+        scanner.close();
     }
 }
