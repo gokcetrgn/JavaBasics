@@ -1,4 +1,4 @@
-package Java102.Generics;
+package Generics;
 
 public class Main {
     public static void main(String[] args) {

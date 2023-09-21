@@ -1,4 +1,4 @@
-package Java102.Generics;
+package Generics;
 public class MyList <T>{
 
     private T[] array;
